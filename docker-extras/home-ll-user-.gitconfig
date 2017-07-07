@@ -1,0 +1,16 @@
+[user]
+        name = Rajiv M Ranganath
+        email = rajiv.ranganath@atihita.com
+[color]
+        ui = true
+[push]
+        default = simple
+[core]
+        editor = vim
+        pager = less -F -X
+[stgit "color"]
+	# Specify output colors for series commands
+	applied = green_foreground
+	current = red_foreground
+	unapplied = white_foreground
+	hidden = cyan_foreground
