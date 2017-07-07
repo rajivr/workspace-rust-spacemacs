@@ -63,6 +63,9 @@ export TERM=xterm-256color
 export LANG=en_US.UTF-8
 export SHELL=/bin/zsh
 
+# vi-mode
+bindkey "^R" history-incremental-search-backward
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
