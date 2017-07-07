@@ -325,6 +325,9 @@ you should place your code here."
   ;; general settings - global
   (setq-default git-magit-status-fullscreen t)
 
+  ;; rust layer - buffer local
+  (setq rust-format-on-save t)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
