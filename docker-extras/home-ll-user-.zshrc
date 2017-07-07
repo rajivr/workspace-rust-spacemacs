@@ -66,6 +66,13 @@ export SHELL=/bin/zsh
 # vi-mode
 bindkey "^R" history-incremental-search-backward
 
+# git and stg alias
+alias gloor='git log --oneline --reverse'
+alias glgr='git log --stat --reverse'
+alias glgpr='git log --stat -p --reverse'
+alias glor='git log --oneline --decorate --reverse'
+alias ssd='stg series --desc'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
