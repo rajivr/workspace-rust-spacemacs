@@ -57,6 +57,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# env variables
+export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export TERM=xterm-256color
+export LANG=en_US.UTF-8
+export SHELL=/bin/zsh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
