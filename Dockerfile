@@ -6,6 +6,8 @@ COPY [ \
   "./docker-extras/home-ll-user-.gitconfig", \
   "./docker-extras/home-ll-user-.spacemacs", \
   "./docker-extras/home-ll-user-.zshrc", \
+  "./docker-extras/home-ll-user-rust_nightly.sh", \
+  "./docker-extras/home-ll-user-rust_stable.sh", \
   "/tmp/docker-build/" \
 ]
 
@@ -28,6 +30,9 @@ RUN \
   # setup oh-my-zsh
   su -l ll-user -c "git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh" && \
   su -l ll-user -c "cp /tmp/docker-build/home-ll-user-.zshrc ~/.zshrc" && \
+  \
+  su -l ll-user -c "cp /tmp/docker-build/home-ll-user-rust_nightly.sh ~/rust_nightly.sh" && \
+  su -l ll-user -c "cp /tmp/docker-build/home-ll-user-rust_stable.sh ~/rust_stable.sh" && \
   \
   # setup epll repository
   curl -X GET -o /tmp/docker-build/RPM-GPG-KEY-lambda-epll https://lambda-linux.io/RPM-GPG-KEY-lambda-epll && \
