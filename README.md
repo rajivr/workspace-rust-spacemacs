@@ -34,6 +34,12 @@ $ docker run -d -v `pwd`:/home/ll-user/work -i rajivmr/workspace-rust-spacemacs
 
 $ docker exec -t -i <container_name> /sbin/setuser ll-user /bin/zsh
 
+ll-user@7d00733ed19e ~ $ source rust_nightly.sh
+
+ll-user@7d00733ed19e ~ $ emacs
+
+ll-user@7d00733ed19e ~ $ source rust_stable.sh
+
 ll-user@7d00733ed19e ~ $ emacs
 ```
 
